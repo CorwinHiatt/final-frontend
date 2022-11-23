@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# This is my Final Project for BocaCode
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+F.E.R.N. stack
 
 ## Available Scripts
 
