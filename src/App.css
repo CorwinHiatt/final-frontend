@@ -1,3 +1,12 @@
-.App-header{
-  justify-content: center;
+*, 
+*::after
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
+
+.header{
+  justify-content: center !important;
+}
+
