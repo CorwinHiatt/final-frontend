@@ -1,4 +1,4 @@
-
+import AddPosts from './components/pages/AddPosts';
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -9,7 +9,8 @@ function App() {
     <div className="App">
       
         <Header/>
-        <h1>This will be and amazing app soon....</h1>
+      
+        
       
         <Footer/> 
     </div>
