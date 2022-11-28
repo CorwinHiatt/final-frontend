@@ -5,8 +5,20 @@
     padding: 0;
     box-sizing: inherit;
 }
+.add-posts{
+  border: solid 1px rgb(235, 3, 3);
+}
+
+
+.post{
+  border : 3px solid hotpink;
+}
+.posts{
+  background-color: brown;
+  border : 3px solid blue;
+}
 
 .header{
-  justify-content: center !important;
+  border : 3px solid green;
 }
 
