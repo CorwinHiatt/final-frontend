@@ -5,11 +5,13 @@
     padding: 0;
     box-sizing: inherit;
 }
-.add-posts{
+.addposts{
   border: solid 1px rgb(235, 3, 3);
 }
 
-
+.posts{
+  border: solid 1px rgb(182, 26, 234);
+}
 .post{
   border : 3px solid hotpink;
 }
@@ -20,5 +22,5 @@
 
 .header{
   border : 3px solid green;
-}
+} 
 

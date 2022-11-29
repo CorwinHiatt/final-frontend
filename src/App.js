@@ -12,6 +12,9 @@ function App() {
     <div className="App">
         <Header className= "header"/>
         <PostCard setPosts={setPosts} posts={posts} className= "postcard"/>
+        <AddPosts 
+        setPosts={setPosts} posts={posts} className= "addposts"
+        />
         <Footer className="footer "/> 
     </div>
   );

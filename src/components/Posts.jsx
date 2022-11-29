@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import PostCard from './PostCard'
 
-export default function AlbumList({ posts, setPosts }) {
+export default function Posts({ posts, setPosts }) {
   
   useEffect(() => {
     fetch('https://corwins-final-api.firebaseapp.com/posts')
@@ -12,9 +12,9 @@ export default function AlbumList({ posts, setPosts }) {
 
   return (
     <main className='posts'>
-      {!albums
+      {!posts
         ? <p>Loading...</p>
-        : posts.map(thisPost => <PostCard key={thisPost.postId} 
+        : posts.map(thisPost => <PostCard key={thisPost.photoId} 
           thisPost={thisPost} />)
       }
     </main>

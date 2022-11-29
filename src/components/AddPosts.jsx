@@ -12,7 +12,7 @@ export default function AddPosts({ setPosts }) {
       return
     }
     const newPost = { message, author, date }
-    fetch(`https://corwins-final-api.firebaseapp.com/posts`, {
+    fetch('https://corwins-final-api.firebaseapp.com/posts', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newPost)
@@ -25,11 +25,13 @@ export default function AddPosts({ setPosts }) {
       setDate(2022)
     })
     .catch(alert)
+  }
     return (
+      // <h1 className="a">addPost</h1>
       <section className="add-posts">
       <h3>Add new Post</h3>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="posts">Posts:
+        <label htmlFor="message"> Post:
           <input type="text" name="message" required
             onChange={e => setMessage(e.target.value)}
             value={message} />
@@ -44,9 +46,8 @@ export default function AddPosts({ setPosts }) {
             onChange={e => setDate(e.target.value)}
             value={date} />
         </label><br />
-        <input type='submit' value='Add Date' />
+        <input type='submit' value='Add Post' />
       </form>
     </section>
     )
   }
-}
