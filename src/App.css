@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: inherit;
 }
+.submit-post-button{
+  justify-content: center;
+}
 .addposts{
   border: solid 1px rgb(235, 3, 3);
 }
@@ -13,14 +16,17 @@
   border: solid 1px rgb(182, 26, 234);
 }
 .post{
-  border : 3px solid hotpink;
+  border : 3px solid rgb(9, 7, 8);
 }
 .posts{
-  background-color: brown;
+  max-height: 25%;
+  background-color: rgb(248, 206, 206);
   border : 3px solid blue;
 }
 
 .header{
-  border : 3px solid green;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center !important;
 } 
 
