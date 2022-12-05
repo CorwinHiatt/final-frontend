@@ -33,7 +33,7 @@ import { Button, Form, Input,  DatePicker } from "antd"
 
   return (
     <Form 
-    name="form"
+    name=""
     // onFinish={handleSubmit} 
     onFinish={onFinish}
     onFinishFailed={onFinishFailed}
@@ -82,6 +82,7 @@ import { Button, Form, Input,  DatePicker } from "antd"
         </Form.Item>
 
       </Form>
+      
     );
   };
 

@@ -1,8 +1,8 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-// import antd from 'antd';
 import '../node_modules/antd/dist/antd';
 
 

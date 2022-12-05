@@ -5,7 +5,11 @@
 export default function Header(){
   return(
     <>
-    <h1 className="header"> header</h1>
+     <ul className="pages">
+      <li><a href="/">Home</a></li>
+      <li><a href="/add-post">Add Post</a></li>
+    </ul>
+  
     </>
 
   )

@@ -1,7 +1,7 @@
 export default function Footer(){
   return(
     <>
-    <h1> This is... footer</h1>
+     <footer className="footer"><small>Copyrights &copy; 2022 | all rights reserved</small></footer>
     </>
   )
 }

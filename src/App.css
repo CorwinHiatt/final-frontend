@@ -5,28 +5,84 @@
     padding: 0;
     box-sizing: inherit;
 }
-.submit-post-button{
-  justify-content: center;
-}
-.addposts{
-  border: solid 1px rgb(235, 3, 3);
-}
-
-.posts{
-  border: solid 1px rgb(182, 26, 234);
+.en{
+  background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #777;
+    box-sizing: border-box;
 }
 .post{
   border : 3px solid rgb(9, 7, 8);
 }
 .posts{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-height: 25%;
-  background-color: rgb(248, 206, 206);
-  border : 3px solid blue;
+  background-color: rgb(219, 211, 211);
+  border : 3px solid rgb(242, 240, 241);
+}
+
+.pages{
+  display: flex;
+  flex-direction: column;
+  max-height: 25%;
+  background-color: rgb(219, 211, 211);
+  border : 3px solid rgb(242, 240, 241);
 }
 
 .header{
-  flex-direction: row;
+  display: flex;
+  flex-direction: center ;
   align-items: center;
-  justify-content: center !important;
+  justify-content: center ;
 } 
+.footer{
+  display: flex;
+  flex-direction: center ;
+  align-items: center;
+  justify-content: center ;
+ 
 
+}
+
+.site-card-border-less-wrapper{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 25%;
+  background-color: rgb(219, 211, 211);
+  border : 3px solid rgb(242, 240, 241);
+}
+
+.pages{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 25%;
+  background-color: rgb(219, 211, 211);
+  border : 3px solid rgb(242, 240, 241);
+}
+
+.ant-form-item-control-input-content{
+  display: flex! ;
+  align-items: center!important;
+  justify-content: center !important;
+  max-height: 25%;
+  background-color: rgb(219, 211, 211);
+  border : 3px solid rgb(242, 240, 241);
+}
+
+.submit-post-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 25%;
+  background-color: rgb(219, 211, 211);
+  border : 3px solid rgb(242, 240, 241);
+}
