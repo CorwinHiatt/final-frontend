@@ -22,17 +22,18 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   max-height: 25%;
-  background-color: rgb(219, 211, 211);
-  border : 3px solid rgb(242, 240, 241);
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%);
 }
 
 .pages{
   display: flex;
   flex-direction: column;
-  max-height: 25%;
-  background-color: rgb(219, 211, 211);
-  border : 3px solid rgb(242, 240, 241);
+  /* max-height: 25%;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%); */
 }
 
 .header{
@@ -46,7 +47,9 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%
   flex-direction: center ;
   align-items: center;
   justify-content: center ;
- 
+  /* margin-top: 85% ; */
+  /* background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%); */
 
 }
 
@@ -56,32 +59,42 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%
   align-items: center;
   justify-content: center;
   max-height: 25%;
-  background-color: rgb(219, 211, 211);
-  border : 3px solid rgb(242, 240, 241);
-}
+   /* background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%); */
+} 
 
 .pages{
   display: flex;
-  align-items: center;
+  align-items: center;;
   justify-content: center;
   max-height: 25%;
-  background-color: rgb(219, 211, 211);
-  border : 3px solid rgb(242, 240, 241);
+  /* background-color: rgb(219, 211, 211);
+  border : 3px solid rgb(242, 240, 241); */
 }
 
-.ant-form-item-control-input-content{
+/* .ant-form-item-control-input-content{
   display: flex! ;
   align-items: center!important;
   justify-content: center !important;
   max-height: 25%;
   background-color: rgb(219, 211, 211);
   border : 3px solid rgb(242, 240, 241);
-}
+} */
 
 .submit-post-button{
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  max-height: 25%;
+  background-color: rgb(219, 211, 211);
+  border : 3px solid rgb(242, 240, 241);
+}
+.site-card-border-less-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   max-height: 25%;
   background-color: rgb(219, 211, 211);
   border : 3px solid rgb(242, 240, 241);
