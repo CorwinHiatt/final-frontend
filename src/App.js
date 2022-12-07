@@ -19,11 +19,11 @@ function App() {
     <Router>
       <Header />
       <Routes >
-        <Route path="/home" element={<Posts/>} />
+        {/* <Route path="/home" element={<Posts/>} /> */}
         <Route path="/calender" element={<Calendar />} />
         <Route path="/posts" element={<Posts />} />
         <Route path="/add-post" element={<AddPosts />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Posts />} />
       </Routes>
       <Footer />
     </Router>
