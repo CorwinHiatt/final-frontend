@@ -3,9 +3,11 @@ import kids from '../../kids.JPG';
 import { Card, Avatar } from 'antd'
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
 import { useEffect, useState } from 'react'
+import { useNavigate } from "react-router-dom";
 
 const {Meta} = Card
 export default function Posts() {
+  const navigate = useNavigate();
   const [posts, setPosts] = useState()
   useEffect(() => {
     fetch('https://corwins-final-api.firebaseapp.com/posts')
@@ -33,7 +35,7 @@ export default function Posts() {
           }
           actions={[
             <SettingOutlined key="setting" />,
-            <EditOutlined key="edit" />,
+            <EditOutlined key="edit" onClick={() => navigate("/post/" + post.photoId)} />,
             <EllipsisOutlined key="ellipsis" />,
           ]}
         >
