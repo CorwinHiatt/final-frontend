@@ -25,12 +25,13 @@ export default function Posts() {
         ? <p>Loading...</p>
         : posts?.map((post) => (
           
+          <div className="single-post-card">
           <Card
           style={{ width: 300 }}
           cover={
             <img
-              alt="example"
-              src={kids}
+            alt="example"
+            src={kids}
             />
           }
           actions={[
@@ -38,12 +39,12 @@ export default function Posts() {
             <EditOutlined key="edit" onClick={() => navigate("/post/" + post.photoId)} />,
             <EllipsisOutlined key="ellipsis" />,
           ]}
-        >
+          >
            <Meta
       avatar={<Avatar src={dad} />}
       title={post.author}
       description={post.subject}
-    />
+      />
 
           <p >
            from: {post.author}
@@ -55,6 +56,7 @@ export default function Posts() {
 
 
     </Card>
+      </div>
         ))
       }
   
