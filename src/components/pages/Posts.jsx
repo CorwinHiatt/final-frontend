@@ -35,7 +35,7 @@ export default function Posts() {
             />
           }
           actions={[
-            <SettingOutlined key="setting" />,
+            <SettingOutlined key="setting" onClick={() => navigate ("/post/" + post.photoId + "/delete")} />,
             <EditOutlined key="edit" onClick={() => navigate("/post/" + post.photoId)} />,
             <EllipsisOutlined key="ellipsis" />,
           ]}

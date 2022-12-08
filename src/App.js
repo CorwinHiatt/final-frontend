@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import AddPosts from './components/AddPosts'
 import EditPosts from './components/EditPosts'
+import DeletePosts from './components/DeletePosts'
 import './App.css';
 import Posts from './components/pages/Posts'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -26,6 +27,7 @@ function App() {
         <Route path="/add-post" element={<AddPosts />} />
         <Route path="/post/:id" element={<EditPosts />} />
         <Route path="/" element={<Posts />} />
+        <Route path="/post/:id/delete" element={<DeletePosts />} />
       </Routes>
       <Footer />
     </Router>
