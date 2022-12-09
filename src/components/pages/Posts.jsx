@@ -1,3 +1,4 @@
+import ImgUpload from "../ImgUpload";
 import dad from "../../dad.jpg"
 import kids from '../../kids.JPG';
 import { Card, Avatar } from 'antd'
@@ -28,11 +29,12 @@ export default function Posts() {
           <div className="single-post-card">
           <Card
           style={{ width: 300 }}
-          cover={
+          cover={(post.image) ? 
             <img
             alt="example"
-            src={kids}
+            src={post.image}
             />
+            : null
           }
           actions={[
             <SettingOutlined key="setting" onClick={() => navigate ("/post/" + post.photoId + "/delete")} />,
