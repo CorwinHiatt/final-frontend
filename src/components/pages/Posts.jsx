@@ -28,6 +28,7 @@ export default function Posts() {
           
           <div className="single-post-card">
           <Card
+          hoverable 
           style={{ width: 300 }}
           cover={(post.image) ? 
             <img

@@ -103,12 +103,15 @@ export default function AddPosts() {
       labelCol={{ span: 8 }}
       wrapperCol={{ span: 16 }}
     >
+
         <Upload
          name='image'
           action=""
           listType="picture-card"
           onPreview={handlePreview}
           onChange={handleChange}
+          labelCol={{ span: 11, offset: 0 }}
+          wrapperCol={{ span: 8, offset:3}}
         >
           <div>
             <PlusOutlined />
@@ -130,6 +133,8 @@ export default function AddPosts() {
         name={'author'}
         label="author"
         rules={[{ required: true, message: "Please input your Name!" }]}
+        labelCol={{ span: 5, offset: 0 }}
+      wrapperCol={{ span: 8, offset:3}}
       >
 
         <Input />
@@ -138,6 +143,8 @@ export default function AddPosts() {
       <Form.Item
         name={['recipient']}
         label="recipient"
+        labelCol={{ span: 5, offset: 0 }}
+        wrapperCol={{ span: 8, offset:3}}
       >
         <Input />
       </Form.Item>
@@ -145,7 +152,8 @@ export default function AddPosts() {
       <Form.Item
         name={['subject']}
         label="subject"
-        wrapperCol={{ span: 16, offset: 8 }}
+        labelCol={{ span: 5, offset: 0 }}
+      wrapperCol={{ span: 8, offset:3}}
       >
         <Input.TextArea
 
@@ -158,24 +166,33 @@ export default function AddPosts() {
 
       <Form.Item
         name={['message']}
-        label="message">
+        label="message"
+        labelCol={{ span: 5, offset: 0 }}
+        wrapperCol={{ span: 8, offset:3}}>
         <Input.TextArea rows={5} />
       </Form.Item>
       <Form.Item
-        wrapperCol={{ span: 16, offset: 8 }}
+              // labelCol={{ span: 5, offset: 0 }}
+              // wrapperCol={{ span: 8, offset:3}}
       >
+
+         
+        <span className="date-submit-box">
         <Form.Item
           name={['date']}
-          label="date">
+          label="date"
+          labelCol={{ span: 11, offset: 0 }}
+          wrapperCol={{ span: 8, offset:3}}>
           <DatePicker defaultValue={dayjs('YYYY-MM-DD')} />
         </Form.Item>
-        <Button
+        <Button 
           name="submit-post-button"
           type="primary"
           htmlType="submit" >
 
           Submit
         </Button>
+        </span>
       </Form.Item>
 
     </Form>

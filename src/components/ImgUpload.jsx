@@ -43,7 +43,8 @@ export default function Upload() {
 
 return(
   <>
-  
+  <p className="flex-box-for-imgUpload">
+
   <form onSubmit={handleUpload}
   >
     <input type='file'name="upload"
@@ -53,6 +54,7 @@ return(
 </input>
 <Button>+</Button>
   </form>
+  </p>
   </>
 )
 }
