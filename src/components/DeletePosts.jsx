@@ -60,6 +60,7 @@ import { useEffect, useState } from 'react'
   return (
     
     <Form 
+    className='delete-form'
     initialValues={deleteValues}
     onFinish={onFinish}
     onFinishFailed={onFinishFailed}
@@ -71,7 +72,8 @@ import { useEffect, useState } from 'react'
         
           name='author'
           label="author"
-         
+          labelCol={{ span: 5, offset: 0 }}
+      wrapperCol={{ span: 8, offset:3}}
           // rules={[{ required: true, message: "Please input your Name!" }]}
           >
           <Input />
@@ -80,6 +82,8 @@ import { useEffect, useState } from 'react'
         <Form.Item 
         name='recipient'
         label="recipient"
+        labelCol={{ span: 5, offset: 0 }}
+      wrapperCol={{ span: 8, offset:3}}
         >
           <Input />
         </Form.Item>
@@ -87,6 +91,8 @@ import { useEffect, useState } from 'react'
         <Form.Item
         name='subject'
         label="subject"
+        labelCol={{ span: 5, offset: 0 }}
+      wrapperCol={{ span: 8, offset:3}}
         >
           
           <Input.TextArea 
@@ -105,7 +111,8 @@ import { useEffect, useState } from 'react'
           <Input.TextArea rows={5} />
         </Form.Item>
         <Form.Item
-          wrapperCol={{ span: 16, offset: 8 }}
+         labelCol={{ span: 5, offset: 0 }}
+         wrapperCol={{ span: 8, offset:3}}
           >
         <Form.Item 
           name='date'

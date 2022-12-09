@@ -115,6 +115,34 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%
   justify-content: center;
 }
 
+/* .ant-form-item-control-input-content{
 
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-left: 625px;
+} */
 
+/* .css-dev-only-do-not-override-1l14yfp.ant-form {
+  display: flex;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  list-style: none;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+} */
 
+.delete-form {
+  background-color: red;
+  display: flex;
+  align-items: center;
+justify-content: center;  flex-direction: column;
+  width: 600px;
+  margin: auto;
+}
