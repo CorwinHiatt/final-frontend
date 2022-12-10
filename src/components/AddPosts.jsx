@@ -95,14 +95,15 @@ export default function AddPosts() {
 
 
   return (
-
+  
     <Form
-
+      className="add-post-form"
       onFinish={onFinish}
       onFinishFailed={onFinishFailed}
       labelCol={{ span: 8 }}
       wrapperCol={{ span: 16 }}
     >
+       <div className="add-post-upload-box">
 
         <Upload
          name='image'
@@ -129,6 +130,7 @@ export default function AddPosts() {
             src={previewImage}
           />
         </Modal>
+       </div>
       <Form.Item
         name={'author'}
         label="author"
@@ -163,6 +165,7 @@ export default function AddPosts() {
 
       </Form.Item>
 
+ <div className="add-post-message-container">
 
       <Form.Item
         name={['message']}
@@ -171,12 +174,12 @@ export default function AddPosts() {
         wrapperCol={{ span: 8, offset:3}}>
         <Input.TextArea rows={5} />
       </Form.Item>
-      <Form.Item
-              // labelCol={{ span: 5, offset: 0 }}
-              // wrapperCol={{ span: 8, offset:3}}
-      >
+ </div>
+         
 
          
+      <Form.Item
+ >
         <span className="date-submit-box">
         <Form.Item
           name={['date']}

@@ -108,12 +108,8 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%
   margin-top: 10px;
 }
 
-:where(.css-dev-only-do-not-override-1l14yfp)[class^="ant-upload"] [class^="ant-upload"], :where(.css-dev-only-do-not-override-1l14yfp)[class*=" ant-upload"] [class^="ant-upload"], :where(.css-dev-only-do-not-override-1l14yfp)[class^="ant-upload"] [class*=" ant-upload"], :where(.css-dev-only-do-not-override-1l14yfp)[class*=" ant-upload"] [class*=" ant-upload"] {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
+
 
 /* .ant-form-item-control-input-content{
 
@@ -123,7 +119,26 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%
   justify-content: center;
   padding-left: 625px;
 } */
+.add-post-message-container{
+  width: 100%;
+  margin-right: 10px;
+}
+.add-post-upload-box{
+  background-color: aqua;
+}
 
+.add-post-box{
+ 
+  margin-left: 150px !important;
+}
+.add-post-form{
+  display: flex;
+  align-items: center;
+justify-content: center;  flex-direction: column;
+  width: 600px;
+  margin: auto;
+  background-color: hotpink;
+}
 /* .css-dev-only-do-not-override-1l14yfp.ant-form {
   display: flex;
   padding: 0;
@@ -137,7 +152,15 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%
   align-content: center;
   align-items: center;
 } */
-
+.nav-bar-box{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: row;
+  max-height: 25%;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%);
+}
 .delete-form {
   background-color: red;
   display: flex;

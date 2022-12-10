@@ -104,12 +104,14 @@ import { useEffect, useState } from 'react'
 
         </Form.Item>
 
-
+    <div className='message-container'>
+      
         <Form.Item 
         name='message'
         label="message">
           <Input.TextArea rows={5} />
         </Form.Item>
+    </div>
         <Form.Item
          labelCol={{ span: 5, offset: 0 }}
          wrapperCol={{ span: 8, offset:3}}
