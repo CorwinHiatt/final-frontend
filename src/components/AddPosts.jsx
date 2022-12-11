@@ -132,8 +132,8 @@ export default function AddPosts() {
         </Modal>
        </div>
       <Form.Item
-        name={'author'}
-        label="author"
+        name={'author:'}
+        label="author:"
         rules={[{ required: true, message: "Please input your Name!" }]}
         labelCol={{ span: 5, offset: 0 }}
       wrapperCol={{ span: 8, offset:3}}

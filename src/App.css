@@ -6,8 +6,8 @@
     box-sizing: inherit;
 }
 .en{
-  background: rgb(131,58,180);
-background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%);
+  /* background: rgb(131,58,180); */
+/* background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%); */
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
@@ -110,8 +110,28 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%
   margin-top: 10px;
 }
 
+.add-post-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 25%;
+  width: 600px;
+  height: 75%;
+  margin: auto;
+  background-color: rgb(218, 215, 211);
+  margin-top: 1% !important;
+}
 
 
+
+#body {
+    /* background-color: 0background-color: #FAACA8; */
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%) !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 /* .ant-form-item-control-input-content{
 
@@ -133,18 +153,7 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%
  
   margin-left: 150px !important;
 }
-.add-post-form{
-  display: flex;
-  align-items: center;
-  
-justify-content: center;  flex-direction: column;
-border-radius: 25%;  
-width: 600px;
-height: 75%;
 
-  margin: auto;
-  background-color: hotpink;
-}
 /* .css-dev-only-do-not-override-1l14yfp.ant-form {
   display: flex;
   padding: 0;
@@ -159,7 +168,7 @@ height: 75%;
   align-items: center;
 } */
 .nav-bar-box{
-  background-color: blue;
+  background-color: rgb(225, 19, 201);
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
