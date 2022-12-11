@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from "react-router-dom";
 
 const {Meta} = Card
-export default function Posts() {
+export default function PostsFromKids() {
   const navigate = useNavigate();
   const [posts, setPosts] = useState()
   useEffect(() => {
@@ -44,17 +44,18 @@ export default function Posts() {
           ]}
           >
            <Meta
-      avatar={<Avatar src={dad } />}
+      avatar={<Avatar src={kids} />}
       title={post.author}
       description={post.subject}
       />
 
-          <p ><span className="post-from">
-           From:    </span>  {post.author} </p>
-           <p><span className="post-to">To:  </span> {post.recipient} </p>
-           <p><span className="post-message">Message:</span> {post.message} </p>
-           <p><span className="post-date">Date:</span> {post.date} </p>
-           
+          <p >
+           from: {post.author}
+           </p>
+           <p>| to: {post.recipient} </p>
+           <p>| date: {post.date} | </p>
+           <p>message: {post.message}
+            </p>
 
 
     </Card>

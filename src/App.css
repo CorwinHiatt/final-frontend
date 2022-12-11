@@ -96,8 +96,10 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%
   justify-content: center;
   flex-direction: column;
   max-height: 25%;
-  background-color: rgb(219, 211, 211);
-  border : 3px solid rgb(242, 240, 241);
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%);
+  /* background-color: rgb(219, 211, 211);
+  border : 3px solid rgb(242, 240, 241); */
 }
 
 .ant-picker-body{
@@ -134,8 +136,12 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%
 .add-post-form{
   display: flex;
   align-items: center;
+  
 justify-content: center;  flex-direction: column;
-  width: 600px;
+border-radius: 25%;  
+width: 600px;
+height: 75%;
+
   margin: auto;
   background-color: hotpink;
 }
@@ -153,13 +159,14 @@ justify-content: center;  flex-direction: column;
   align-items: center;
 } */
 .nav-bar-box{
+  background-color: blue;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   flex-direction: row;
   max-height: 25%;
-  background: rgb(131,58,180);
-  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%);
+  /* background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%); */
 }
 .delete-form {
   background-color: red;
@@ -168,4 +175,17 @@ justify-content: center;  flex-direction: column;
 justify-content: center;  flex-direction: column;
   width: 600px;
   margin: auto;
+}
+.post-from{
+  font-weight: bold;
+}
+.post-to{
+  font-weight: bold;
+  
+}
+.post-message{
+  font-weight: bold;
+}
+.post-date{
+  font-weight: bold;
 }
