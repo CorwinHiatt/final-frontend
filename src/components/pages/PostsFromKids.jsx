@@ -1,5 +1,5 @@
-import ImgUpload from "../ImgUpload";
-import dad from "../../dad.jpg"
+// import ImgUpload from "../ImgUpload";
+// import dad from "../../dad.jpg"
 import kids from '../../kids.JPG';
 import { Card, Avatar } from 'antd'
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';

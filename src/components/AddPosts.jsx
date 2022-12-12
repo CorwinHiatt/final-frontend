@@ -95,7 +95,7 @@ export default function AddPosts() {
 
 
   return (
-  
+  // <img alt= ""style="/* -webkit-user-select: all; *//* margin: auto; */width: 100%;/* cursor: zoom-in; *//* background-color: hsl(0, 0%, 90%); *//* transition: background-color 300ms; */" src="https://i.pinimg.com/originals/a6/7f/71/a67f7159bd1b3a6e72194fcd052275af.jpg" width="287" height="479">
     <Form
       className="add-post-form"
       onFinish={onFinish}
@@ -105,7 +105,7 @@ export default function AddPosts() {
     >
        <div className="add-post-upload-box">
 
-        <Upload
+        <Upload className="add-post-upload"
          name='image'
           action=""
           listType="picture-card"
@@ -178,16 +178,15 @@ export default function AddPosts() {
          
 
          
+ <span className="date-submit-box">
       <Form.Item
- >
-        <span className="date-submit-box">
-        <Form.Item
+      
           name={['date']}
           label="date"
-          labelCol={{ span: 11, offset: 0 }}
+          labelCol={{ span: 4, offset:0 }}
           wrapperCol={{ span: 8, offset:3}}>
-          <DatePicker defaultValue={dayjs('YYYY-MM-DD')} />
-        </Form.Item>
+          <DatePicker defaultValue={dayjs('2023-01-01','YYYY-MM-DD')} />
+      
         <Button 
           name="submit-post-button"
           type="primary"
@@ -195,11 +194,11 @@ export default function AddPosts() {
 
           Submit
         </Button>
-        </span>
       </Form.Item>
+        </span>
 
     </Form>
-
+            // </img>
   );
 };
 

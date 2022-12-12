@@ -59,7 +59,7 @@ import { useEffect, useState } from 'react'
 
   return (
     
-    <Form 
+    <Form className='edit-post-form'
     initialValues={formValues}
     onFinish={onFinish}
     onFinishFailed={onFinishFailed}
@@ -99,14 +99,18 @@ import { useEffect, useState } from 'react'
         </Form.Item>
 
 
-        <Form.Item 
-        name='message'
-        label="message">
-          <Input.TextArea rows={5} />
-        </Form.Item>
-        <Form.Item
-          wrapperCol={{ span: 16, offset: 8 }}
-          >
+
+       
+
+<Form.Item
+  name={['message']}
+  label="message"
+  labelCol={{ span: -16, offset: -16}}
+  wrapperCol={{ span: 24, offset:-3}}>
+  <Input.TextArea rows={5} />
+</Form.Item>
+
+       
         <Form.Item 
           name='date'
           label="date">
@@ -119,7 +123,7 @@ import { useEffect, useState } from 'react'
             
             Submit
           </Button>
-        </Form.Item>
+       
 
       </Form>
       

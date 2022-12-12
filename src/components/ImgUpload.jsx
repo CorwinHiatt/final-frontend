@@ -30,8 +30,7 @@ export default function Upload() {
     //connect to a reference to our file in the bucket
     const filename = selectedFile?.name;
     const imgRef = ref(storage, "posts/" + filename)
-    //Todd's quick cheat - create the url from reference
-    // const url = `https://firebasestorage.googleapis.com/v0/b/upload-storage-cjh.appspot.com/o/photos%2F${filename}?alt=media`
+    // create the url from reference
     const url = `https://firebasestorage.googleapis.com/v0/b/corwins-final-api/o/photos%2F${filename}?alt=media&token=bf0842ac-f071-4d91-beeb-c231815870c7`
    
    

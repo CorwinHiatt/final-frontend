@@ -5,16 +5,10 @@
     padding: 0;
     box-sizing: inherit;
 }
-.en{
-  /* background: rgb(131,58,180); */
-/* background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%); */
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    color: #777;
-    box-sizing: border-box;
-}
+
+
+
+
 .post{
   border : 3px solid rgb(9, 7, 8);
 }
@@ -44,13 +38,12 @@
   justify-content: center ;
 } 
 .footer{
+  color:aliceblue;
   display: flex;
   flex-direction: center ;
   align-items: center;
   justify-content: center ;
-  /* margin-top: 85% ; */
-  /* background: rgb(131,58,180);
-  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%); */
+
 
 }
 
@@ -60,26 +53,10 @@
   align-items: center;
   justify-content: center;
   max-height: 25%;
-   /* background: rgb(131,58,180);
-  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%); */
+
 } 
 
-.pages{
-  display: flex;
-  justify-content: center;
 
-  /* background-color: rgb(219, 211, 211);
-  border : 3px solid rgb(242, 240, 241); */
-}
-
-/* .ant-form-item-control-input-content{
-  display: flex! ;
-  align-items: center!important;
-  justify-content: center !important;
-  max-height: 25%;
-  background-color: rgb(219, 211, 211);
-  border : 3px solid rgb(242, 240, 241);
-} */
 
 .submit-post-button{
   display: flex;
@@ -90,83 +67,212 @@
   background-color: rgb(219, 211, 211);
   border : 3px solid rgb(242, 240, 241);
 }
+.edit-post-form{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 25%;
+
+  background-color: rgb(219, 211, 211);
+  border: 3px solid rgb(242, 240, 241);
+  align-content: center;
+  flex-direction: column;
+
+}
 .site-card-border-less-wrapper{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   max-height: 25%;
-  background: rgb(131,58,180);
-  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%);
-  /* background-color: rgb(219, 211, 211);
-  border : 3px solid rgb(242, 240, 241); */
+  background-image: -moz-linear-gradient(45deg, #faaca8 0%, #ddd6f3 100%);
+
 }
 
-.ant-picker-body{
-    background: rgb(131,58,180);
-  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%);
-}
+
 .single-post-card{
+  background-color: rgb(254, 255, 255) ;
+  scroll-behavior: smooth;
   margin-top: 10px;
 }
+.desktop-icon{
+  --c1: rgb(244, 69, 69);
+  --c2: orange;
+  --c3: yellow;
+  --c4: rgb(126, 240, 126);
+  --c5: rgb(83, 83, 209);
+  --c6: rgb(124, 7, 208);
+  --c7: violet;
+  
+  --solid: var(--c1), var(--c2), var(--c3), var(--c4), var(--c5), var(--c6), var(--c7);
+  --solid-wrap: var(--solid), var(--c1);
+  --trans: 
+    var(--c1), transparent,
+    var(--c2), transparent,
+    var(--c3), transparent,
+    var(--c4), transparent,
+    var(--c5), transparent,
+    var(--c6), transparent,
+    var(--c7)
+  ;
+  --trans-wrap: var(--trans), transparent, var(--c1);
+  
+  background: 
+    radial-gradient(circle, var(--trans)),
+    conic-gradient(from 180deg, var(--trans-wrap)),
+    radial-gradient(circle, var(--trans)),
+    conic-gradient(var(--solid-wrap));
+  background-blend-mode: overlay;
+  /* padding: 3em; */
 
+}
+.pie-icon{
+  --c1: rgb(79, 4, 4);
+  --c2: rgb(248, 198, 105);
+  --c3: rgb(157, 157, 82);
+  --c4: rgb(177, 246, 177);
+  --c5: rgb(119, 119, 182);
+  --c6: rgb(124, 7, 208);
+  --c7: violet;
+  
+  --solid: var(--c1), var(--c2), var(--c3), var(--c4), var(--c5), var(--c6), var(--c7);
+  --solid-wrap: var(--solid), var(--c1);
+  --trans: 
+    var(--c1), transparent,
+    var(--c2), transparent,
+    var(--c3), transparent,
+    var(--c4), transparent,
+    var(--c5), transparent,
+    var(--c6), transparent,
+    var(--c7)
+  ;
+  --trans-wrap: var(--trans), transparent, var(--c1);
+  
+  background: 
+    radial-gradient(circle, var(--trans)),
+    conic-gradient(from 180deg, var(--trans-wrap)),
+    radial-gradient(circle, var(--trans)),
+    conic-gradient(var(--solid-wrap));
+  background-blend-mode: overlay;
+  /* padding: 3em; */
+}
+.home-icon{
+  --c1: rgb(244, 69, 69);
+  --c2: orange;
+  --c3: yellow;
+  --c4: rgb(126, 240, 126);
+  --c5: rgb(83, 83, 209);
+  --c6: rgb(124, 7, 208);
+  --c7: violet;
+  
+  --solid: var(--c1), var(--c2), var(--c3), var(--c4), var(--c5), var(--c6), var(--c7);
+  --solid-wrap: var(--solid), var(--c1);
+  --trans: 
+    var(--c1), transparent,
+    var(--c2), transparent,
+    var(--c3), transparent,
+    var(--c4), transparent,
+    var(--c5), transparent,
+    var(--c6), transparent,
+    var(--c7)
+  ;
+  --trans-wrap: var(--trans), transparent, var(--c1);
+  
+  background: 
+    radial-gradient(circle, var(--trans)),
+    conic-gradient(from 180deg, var(--trans-wrap)),
+    radial-gradient(circle, var(--trans)),
+    conic-gradient(var(--solid-wrap));
+  background-blend-mode: overlay;
+  /* padding: 3em; */
+}
+.mail-icon{
+  --c1: rgb(237, 145, 145);
+  --c2: rgb(124, 99, 53);
+  --c3: rgb(150, 150, 2);
+  --c4: rgb(19, 228, 19);
+  --c5: rgb(208, 208, 227);
+  --c6: rgb(211, 162, 246);
+  --c7: rgb(240, 18, 240);
+  
+  --solid: var(--c1), var(--c2), var(--c3), var(--c4), var(--c5), var(--c6), var(--c7);
+  --solid-wrap: var(--solid), var(--c1);
+  --trans: 
+    var(--c1), transparent,
+    var(--c2), transparent,
+    var(--c3), transparent,
+    var(--c4), transparent,
+    var(--c5), transparent,
+    var(--c6), transparent,
+    var(--c7)
+  ;
+  --trans-wrap: var(--trans), transparent, var(--c1);
+  
+  background: 
+    radial-gradient(circle, var(--trans)),
+    conic-gradient(from 180deg, var(--trans-wrap)),
+    radial-gradient(circle, var(--trans)),
+    conic-gradient(var(--solid-wrap));
+  background-blend-mode: overlay;
+}
 .add-post-form{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   border-radius: 25%;
-  width: 600px;
-  height: 75%;
+  width: 50%;
+  height: 750px ;
   margin: auto;
   background-color: rgb(218, 215, 211);
-  margin-top: 1% !important;
+  margin-top: 1.5% !important;
+  box-shadow:  #c1aad6  0 0 10px;;
 }
 
 
 
-#body {
-    /* background-color: 0background-color: #FAACA8; */
-    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%) !important;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
-/* .ant-form-item-control-input-content{
-
+.button-routes{
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
   justify-content: center;
-  padding-left: 625px;
-} */
+
+  background-color: rgba(241, 163, 242, 0.944);
+  margin-bottom: 4% !important;
+}
+
 .add-post-message-container{
   width: 100%;
   margin-right: 10px;
 }
 .add-post-upload-box{
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 10px burlywood;
+  border-radius: 2%;
+  background-color: rgb(217, 228, 228);
+  box-shadow: #777 0 0 10px;
+  margin-bottom: 10px;
 }
 
 .add-post-box{
  
   margin-left: 150px !important;
 }
-
-/* .css-dev-only-do-not-override-1l14yfp.ant-form {
+.date-submit-box{
   display: flex;
-  padding: 0;
-  color: rgba(0, 0, 0, 0.88);
-  font-size: 14px;
-  line-height: 1.5714285714285714;
-  list-style: none;
-  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
+  justify-content: center;
   align-items: center;
-} */
+  border: solid 10px burlywood;
+  border-radius: 2%;
+  background-color: rgb(217, 228, 228);
+  box-shadow: #777 0 0 10px;
+  margin-bottom: 10px;
+
+}
+
 .nav-bar-box{
   background-color: rgb(225, 19, 201);
   display: flex !important;
@@ -174,15 +280,16 @@
   justify-content: center !important;
   flex-direction: row;
   max-height: 25%;
-  /* background: rgb(131,58,180);
-  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%); */
+ 
 }
 .delete-form {
-  background-color: red;
+  background-color: rgb(195, 189, 180);
   display: flex;
   align-items: center;
 justify-content: center;  flex-direction: column;
-  width: 600px;
+  width: 550px;
+  border-radius: 25%;
+  height: 675px !important;
   margin: auto;
 }
 .post-from{

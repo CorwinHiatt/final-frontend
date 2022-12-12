@@ -181,13 +181,18 @@ export default function AddPostsFromKids() {
       <Form.Item
  >
         <span className="date-submit-box">
+          <div className="date-submit-box">
+
         <Form.Item
           name={['date']}
           label="date"
+          style={{ textDecoration: 'underline'  }}
           labelCol={{ span: 11, offset: 0 }}
           wrapperCol={{ span: 8, offset:3}}>
           <DatePicker defaultValue={dayjs('YYYY-MM-DD')} />
         </Form.Item>
+          </div>
+          
         <Button 
           name="submit-post-button"
           type="primary"
