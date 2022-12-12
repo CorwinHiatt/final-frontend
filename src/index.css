@@ -2,6 +2,7 @@
 
 
 body {
+  min-height: 100vh;
   --c1: rgb(244, 69, 69);
   --c2: orange;
   --c3: yellow;
@@ -31,6 +32,7 @@ body {
   background-blend-mode: overlay;
   height: 100%;  
   margin: 0;
+  background-repeat: no-repeat;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

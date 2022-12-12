@@ -1,4 +1,4 @@
-// import kids from '../../kids.JPG';
+import kids from '../../kids.JPG';
 import dad from "../../dad.jpg"
 import { Card, Avatar } from 'antd'
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
@@ -22,19 +22,29 @@ export default function Posts() {
     <div className="site-card-border-less-wrapper">
 
 
+      
       {!posts
         ? <p>Loading...</p>
         : posts?.map((post) => (
 
-          <div >
             <Card className="single-post-card"
               hoverable
-              style={{ width: 300 }}
+              style={{ width: 275 }}
               cover={(post.image) ?
+                <>
+                
+                { post.image.indexOf('mp4') > 0?
+                <video controls>
+                <source src={post.image}
+                type="video/mp4" />
+                </video>
+                : 
                 <img
-                  alt="example"
-                  src={post.image}
+                alt="single post img card"
+                src={post.image}
                 />
+              }
+                </>
                 : null
               }
               actions={[
@@ -42,12 +52,21 @@ export default function Posts() {
                 <EditOutlined key="edit" onClick={() => navigate("/post/" + post.photoId)} />,
                 <EllipsisOutlined key="ellipsis" />,
               ]}
-            >
+              >
+              {post.author?.toLowerCase() === "dad" ?
               <Meta
                 avatar={<Avatar src={dad} />}
                 title={post.author}
                 description={post.subject}
-              />
+                />
+                :
+                <Meta
+                  avatar={<Avatar src={kids} />}
+                  title={post.author}
+                  description={post.subject}
+                  />
+
+            }
               <p ><span className="post-from">
                 From:    </span>  {post.author} </p>
               <p><span className="post-to">To:  </span> {post.recipient} </p>
@@ -55,11 +74,12 @@ export default function Posts() {
               <p><span className="post-date">Date:</span> {post.date} </p>
 
 
+      
 
             </Card>
-          </div>
         ))
       }
-    </div>
+      </div>
+    
   )
 }

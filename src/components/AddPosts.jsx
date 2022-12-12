@@ -105,7 +105,7 @@ export default function AddPosts() {
     >
        <div className="add-post-upload-box">
 
-        <Upload className="add-post-upload"
+        <Upload 
          name='image'
           action=""
           listType="picture-card"
@@ -133,10 +133,10 @@ export default function AddPosts() {
        </div>
       <Form.Item
         name={'author:'}
-        label="author:"
+        label="author"
         rules={[{ required: true, message: "Please input your Name!" }]}
-        labelCol={{ span: 5, offset: 0 }}
-      wrapperCol={{ span: 8, offset:3}}
+        // labelCol={{ span: 5, offset: 0 }}
+      // wrapperCol={{ span: 8, offset:3}}
       >
 
         <Input />
@@ -145,8 +145,8 @@ export default function AddPosts() {
       <Form.Item
         name={['recipient']}
         label="recipient"
-        labelCol={{ span: 5, offset: 0 }}
-        wrapperCol={{ span: 8, offset:3}}
+        // labelCol={{ span: 5, offset: 0 }}
+        // wrapperCol={{ span: 8, offset:3}}
       >
         <Input />
       </Form.Item>
@@ -154,8 +154,8 @@ export default function AddPosts() {
       <Form.Item
         name={['subject']}
         label="subject"
-        labelCol={{ span: 5, offset: 0 }}
-      wrapperCol={{ span: 8, offset:3}}
+        // labelCol={{ span: 5, offset: 0 }}
+      // wrapperCol={{ span: 8, offset:3}}
       >
         <Input.TextArea
 
@@ -170,24 +170,26 @@ export default function AddPosts() {
       <Form.Item
         name={['message']}
         label="message"
-        labelCol={{ span: 5, offset: 0 }}
-        wrapperCol={{ span: 8, offset:3}}>
+        // labelCol={{ span: 5, offset: 0 }}
+        // wrapperCol={{ span: 8, offset:3}}
+        >
         <Input.TextArea rows={5} />
       </Form.Item>
  </div>
          
 
          
- <span className="date-submit-box">
       <Form.Item
       
           name={['date']}
           label="date"
-          labelCol={{ span: 4, offset:0 }}
-          wrapperCol={{ span: 8, offset:3}}>
+          // labelCol={{ span: 4, offset:0 }}
+          // wrapperCol={{ span: 8, offset:3}}
+          >
           <DatePicker defaultValue={dayjs('2023-01-01','YYYY-MM-DD')} />
       
         <Button 
+        style={{marginTop:10}}
           name="submit-post-button"
           type="primary"
           htmlType="submit" >
@@ -195,7 +197,6 @@ export default function AddPosts() {
           Submit
         </Button>
       </Form.Item>
-        </span>
 
     </Form>
             // </img>

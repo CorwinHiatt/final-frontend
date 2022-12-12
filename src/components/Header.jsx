@@ -5,48 +5,51 @@ import {
   PieChartOutlined,
 } from '@ant-design/icons';
 import { Button, Menu } from 'antd'
+import { useNavigate } from 'react-router-dom';
 
 
 
-      export default function Header(){
-        
-        return (
-          <div className="button-routes">
+export default function Header() {
 
-            <Menu>
-          
-  <ul className="pages">
-    <Button className='home-icon'>
- <MailOutlined   
-      />
-    <li><a href="/">Home</a></li>
-      </Button> 
+  let navitgate = useNavigate()
 
-     
-     
-      <Button className='desktop-icon'>
-          <DesktopOutlined />
-    <li><a href="/add-post">Add Post</a></li>
-      </Button>
+  return (
+    <div className="button-routes">
 
-      
+      <Menu className='ant-nav-menu'>
 
-      
-      <Button className='pie-icon' >
-      <PieChartOutlined
-     />
-    <li><a href="/calender">Calender</a></li>
-      </Button>
-      
-    </ul>
-    
-            </Menu>
+        <ul className="pages">
+          <Button onClick={() => navitgate("/")} className='button-mail'>
+            <MailOutlined
+            />
+            Home
+          </Button>
 
-  
-     </div> 
 
-)
-    
-    
-  
+
+          <Button onClick={() => navitgate("/add-post")} className='button-mail'>
+            <DesktopOutlined />
+            Add Post
+          </Button>
+
+
+
+
+          <Button onClick={() => navitgate("/calender")} className='button-mail' >
+            <PieChartOutlined
+            />
+            Calender
+          </Button>
+
+        </ul>
+
+      </Menu>
+
+
+    </div>
+
+  )
+
+
+
 }

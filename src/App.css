@@ -22,13 +22,17 @@
   background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%);
 }
 
+.button-mail{
+  margin: 10px;
+  background-color: rgb(248, 249, 167);
+}
+
 .pages{
   display: flex;
   align-items: center;
     justify-content: center;
-  /* max-height: 25%;
-  background: rgb(131,58,180);
-  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%); */
+    border: solid #efeef0 2px;
+
 }
 
 .header{
@@ -38,7 +42,7 @@
   justify-content: center ;
 } 
 .footer{
-  color:aliceblue;
+  color:rgb(2, 61, 113);
   display: flex;
   flex-direction: center ;
   align-items: center;
@@ -55,7 +59,6 @@
   max-height: 25%;
 
 } 
-
 
 
 .submit-post-button{
@@ -68,24 +71,26 @@
   border : 3px solid rgb(242, 240, 241);
 }
 .edit-post-form{
-  flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 25%;
-
-  background-color: rgb(219, 211, 211);
-  border: 3px solid rgb(242, 240, 241);
-  align-content: center;
   flex-direction: column;
-
+  border-radius: 15px;
+  width: 500px;
+  padding: 20px;
+  /* height: 750px ; */
+  margin: auto;
+  background-color: rgb(248, 249, 167);
+  margin-top: 1.5% !important;
+  box-shadow:  #7e07ee  0 0 10px;;
 }
 .site-card-border-less-wrapper{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-height: 25%;
+  /* max-height: 25%; */
+  /* box-shadow: #a255ea 10px 10px 10px !important ; */
   background-image: -moz-linear-gradient(45deg, #faaca8 0%, #ddd6f3 100%);
 
 }
@@ -93,154 +98,50 @@
 
 .single-post-card{
   background-color: rgb(254, 255, 255) ;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   margin-top: 10px;
+  box-shadow: #f6f5f7 1px 1px 10px ;
 }
-.desktop-icon{
-  --c1: rgb(244, 69, 69);
-  --c2: orange;
-  --c3: yellow;
-  --c4: rgb(126, 240, 126);
-  --c5: rgb(83, 83, 209);
-  --c6: rgb(124, 7, 208);
-  --c7: violet;
-  
-  --solid: var(--c1), var(--c2), var(--c3), var(--c4), var(--c5), var(--c6), var(--c7);
-  --solid-wrap: var(--solid), var(--c1);
-  --trans: 
-    var(--c1), transparent,
-    var(--c2), transparent,
-    var(--c3), transparent,
-    var(--c4), transparent,
-    var(--c5), transparent,
-    var(--c6), transparent,
-    var(--c7)
-  ;
-  --trans-wrap: var(--trans), transparent, var(--c1);
-  
-  background: 
-    radial-gradient(circle, var(--trans)),
-    conic-gradient(from 180deg, var(--trans-wrap)),
-    radial-gradient(circle, var(--trans)),
-    conic-gradient(var(--solid-wrap));
-  background-blend-mode: overlay;
-  /* padding: 3em; */
 
-}
-.pie-icon{
-  --c1: rgb(79, 4, 4);
-  --c2: rgb(248, 198, 105);
-  --c3: rgb(157, 157, 82);
-  --c4: rgb(177, 246, 177);
-  --c5: rgb(119, 119, 182);
-  --c6: rgb(124, 7, 208);
-  --c7: violet;
-  
-  --solid: var(--c1), var(--c2), var(--c3), var(--c4), var(--c5), var(--c6), var(--c7);
-  --solid-wrap: var(--solid), var(--c1);
-  --trans: 
-    var(--c1), transparent,
-    var(--c2), transparent,
-    var(--c3), transparent,
-    var(--c4), transparent,
-    var(--c5), transparent,
-    var(--c6), transparent,
-    var(--c7)
-  ;
-  --trans-wrap: var(--trans), transparent, var(--c1);
-  
-  background: 
-    radial-gradient(circle, var(--trans)),
-    conic-gradient(from 180deg, var(--trans-wrap)),
-    radial-gradient(circle, var(--trans)),
-    conic-gradient(var(--solid-wrap));
-  background-blend-mode: overlay;
-  /* padding: 3em; */
-}
-.home-icon{
-  --c1: rgb(244, 69, 69);
-  --c2: orange;
-  --c3: yellow;
-  --c4: rgb(126, 240, 126);
-  --c5: rgb(83, 83, 209);
-  --c6: rgb(124, 7, 208);
-  --c7: violet;
-  
-  --solid: var(--c1), var(--c2), var(--c3), var(--c4), var(--c5), var(--c6), var(--c7);
-  --solid-wrap: var(--solid), var(--c1);
-  --trans: 
-    var(--c1), transparent,
-    var(--c2), transparent,
-    var(--c3), transparent,
-    var(--c4), transparent,
-    var(--c5), transparent,
-    var(--c6), transparent,
-    var(--c7)
-  ;
-  --trans-wrap: var(--trans), transparent, var(--c1);
-  
-  background: 
-    radial-gradient(circle, var(--trans)),
-    conic-gradient(from 180deg, var(--trans-wrap)),
-    radial-gradient(circle, var(--trans)),
-    conic-gradient(var(--solid-wrap));
-  background-blend-mode: overlay;
-  /* padding: 3em; */
-}
-.mail-icon{
-  --c1: rgb(237, 145, 145);
-  --c2: rgb(124, 99, 53);
-  --c3: rgb(150, 150, 2);
-  --c4: rgb(19, 228, 19);
-  --c5: rgb(208, 208, 227);
-  --c6: rgb(211, 162, 246);
-  --c7: rgb(240, 18, 240);
-  
-  --solid: var(--c1), var(--c2), var(--c3), var(--c4), var(--c5), var(--c6), var(--c7);
-  --solid-wrap: var(--solid), var(--c1);
-  --trans: 
-    var(--c1), transparent,
-    var(--c2), transparent,
-    var(--c3), transparent,
-    var(--c4), transparent,
-    var(--c5), transparent,
-    var(--c6), transparent,
-    var(--c7)
-  ;
-  --trans-wrap: var(--trans), transparent, var(--c1);
-  
-  background: 
-    radial-gradient(circle, var(--trans)),
-    conic-gradient(from 180deg, var(--trans-wrap)),
-    radial-gradient(circle, var(--trans)),
-    conic-gradient(var(--solid-wrap));
-  background-blend-mode: overlay;
-}
 .add-post-form{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-radius: 25%;
-  width: 50%;
-  height: 750px ;
+  border-radius: 15px;
+  width: 500px;
+  padding: 20px;
+  /* height: 750px ; */
   margin: auto;
-  background-color: rgb(218, 215, 211);
+  background-color: rgb(248, 249, 167);
   margin-top: 1.5% !important;
-  box-shadow:  #c1aad6  0 0 10px;;
+  box-shadow:  #7e07ee  0 0 10px;;
 }
 
+@media (max-width: 550px) {
+  .add-post-form{
+    width: 100%;
+  }}
 
+
+.ant-nav-menu{
+  background-color: transparent;
+  margin: 2px;
+}
 
 
 .button-routes{
   display: flex;
+  z-index: 100;
   align-items: center;
+  width: 100%;
   justify-content: center;
+position: fixed;
 
-  background-color: rgba(241, 163, 242, 0.944);
+  background-color: rgba(241, 163, 242, 0.41);
   margin-bottom: 4% !important;
 }
+
 
 .add-post-message-container{
   width: 100%;
@@ -250,8 +151,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 10px burlywood;
-  border-radius: 2%;
+  border: solid 10px rgba(241, 240, 240, 0.998);
+  border-radius: 45%;
   background-color: rgb(217, 228, 228);
   box-shadow: #777 0 0 10px;
   margin-bottom: 10px;
@@ -265,10 +166,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 10px burlywood;
-  border-radius: 2%;
-  background-color: rgb(217, 228, 228);
-  box-shadow: #777 0 0 10px;
+  border: solid 10px rgb(163, 238, 194);
+  border-radius: 20%;
+  background-color: rgba(179, 246, 246, 0.801);
+  box-shadow: rgb(105, 82, 105) 0 0 10px;
   margin-bottom: 10px;
 
 }
@@ -283,14 +184,17 @@
  
 }
 .delete-form {
-  background-color: rgb(195, 189, 180);
   display: flex;
   align-items: center;
-justify-content: center;  flex-direction: column;
-  width: 550px;
+  justify-content: center;
+  flex-direction: column;
   border-radius: 25%;
-  height: 675px !important;
+  width: 50%;
+  height: 750px ;
   margin: auto;
+  background-color: rgb(248, 249, 167);
+  margin-top: 1.5% !important;
+  box-shadow:  #7e07ee  0 0 10px;;
 }
 .post-from{
   font-weight: bold;
