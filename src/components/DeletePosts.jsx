@@ -117,7 +117,7 @@ import { useEffect, useState } from 'react'
         <Form.Item 
           name='date'
           label="date">
-             <DatePicker defaultValue={dayjs('YYYY-MM-DD')} />
+             {/* <DatePicker defaultValue={dayjs('YYYY-MM-DD')} /> */}
         </Form.Item>
         <Button danger
         type="primary" 

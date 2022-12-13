@@ -64,7 +64,7 @@ import { useEffect, useState } from 'react'
     onFinish={onFinish}
     onFinishFailed={onFinishFailed}
     labelCol={{ span: 8 }}
-    wrapperCol={{ span: 16 }}
+    // wrapperCol={{ span: 16 }}
     >
 
         <Form.Item
@@ -72,7 +72,7 @@ import { useEffect, useState } from 'react'
           name='author'
           label="author"
          
-          rules={[{ required: true, message: "Please input your Name!" }]}
+          rules={[{ required: false, message: "Please input your Name!" }]}
           >
           <Input />
         </Form.Item>
@@ -105,8 +105,9 @@ import { useEffect, useState } from 'react'
 <Form.Item
   name={['message']}
   label="message"
-  labelCol={{ span: -16, offset: -16}}
-  wrapperCol={{ span: 24, offset:-3}}>
+  // labelCol={{ span: -16, offset: -16}}
+  // wrapperCol={{ span: 24, offset:-3}}
+  >
   <Input.TextArea rows={5} />
 </Form.Item>
 
@@ -114,7 +115,8 @@ import { useEffect, useState } from 'react'
         <Form.Item 
           name='date'
           label="date">
-             <DatePicker defaultValue={dayjs('2015-01-01', 'YYYY-MM-DD')} />
+             <Input type="date" />
+             {/* <DatePicker defaultValue={dayjs('2015-01-01', 'YYYY-MM-DD')} /> */}
         </Form.Item>
           <Button 
            name="submit-post-button"

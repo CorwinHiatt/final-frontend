@@ -33,7 +33,7 @@ export default function Posts() {
               cover={(post.image) ?
                 <>
                 
-                { post.image.indexOf('mp4') > 0?
+                { (post.image.toLowerCase().indexOf('mp4') > 0 || post.image.toLowerCase().indexOf('.mov'))?
                 <video controls>
                 <source src={post.image}
                 type="video/mp4" />
