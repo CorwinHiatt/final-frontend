@@ -135,7 +135,7 @@ export default function AddPosts() {
         name='author'
         label="author"
         rules={[{ required: true, message: "Please input your Name!" }]}
-        // labelCol={{ span: 5, offset: 0 }}
+      //   labelCol={{ span: 5, offset: 0 }}
       // wrapperCol={{ span: 8, offset:3}}
       >
 
@@ -183,8 +183,8 @@ export default function AddPosts() {
       
           name={['date']}
           label="date"
-          // labelCol={{ span: 4, offset:0 }}
-          // wrapperCol={{ span: 8, offset:3}}
+          labelCol={{ span: 4, offset:0 }}
+          wrapperCol={{ span: 8, offset:3}}
           >
           <DatePicker defaultValue={dayjs('2023-01-01','YYYY-MM-DD')} />
       

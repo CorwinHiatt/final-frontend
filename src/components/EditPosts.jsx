@@ -1,136 +1,135 @@
 import dayjs from 'dayjs'
 import { useNavigate, useParams } from "react-router-dom"
-import { Button, Form, Input,  DatePicker} from "antd"
+import { Button, Form, Input, DatePicker } from "antd"
 import { useEffect, useState } from 'react'
 
-  
-    export default function EditPosts() {
-      // const [form] = Form.useForm()
-      const [formValues, setFormValues] = useState()
-      const {id} = useParams()
-      const navigate = useNavigate()
-      useEffect(() => {
 
-        fetch(`https://corwins-final-api.firebaseapp.com/posts/${id}`)
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-            setFormValues(data.message)
-            // form.setFieldsValue(data.message)
-        })
-        .catch(err => console.error(err) )
+export default function EditPosts() {
+  // const [form] = Form.useForm()
+  const [formValues, setFormValues] = useState()
+  const { id } = useParams()
+  const navigate = useNavigate()
+  useEffect(() => {
 
-      }, [id]) 
-
-
-
-    const onFinish = (values) => {
-      console.log('success', values)
-
-     
-      
-      fetch(`https://corwins-final-api.firebaseapp.com/posts/${id}`, {
-        method: 'PATCH',
-        headers: {
-           'Content-Type': 'application/json'
-           },
-        body: JSON.stringify(values)
-      })
+    fetch(`https://corwins-final-api.firebaseapp.com/posts/${id}`)
       .then(response => response.json())
-      .then(data => { 
+      .then(data => {
+        console.log(data)
+        setFormValues(data.message)
+        // form.setFieldsValue(data.message)
+      })
+      .catch(err => console.error(err))
+
+  }, [id])
+
+
+
+  const onFinish = (values) => {
+    console.log('success', values)
+
+
+
+    fetch(`https://corwins-final-api.firebaseapp.com/posts/${id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(values)
+    })
+      .then(response => response.json())
+      .then(data => {
         console.log(data)
         navigate('/posts')
       })
-      
-       .catch(console.error)
-     
-    }
+
+      .catch(console.error)
+
+  }
 
 
 
-    const onFinishFailed = (errorInfo) => {
-      console.log('failed', errorInfo)
-    }
-  
+  const onFinishFailed = (errorInfo) => {
+    console.log('failed', errorInfo)
+  }
 
-  if(!formValues) return <p>Loading</p>
 
-   //console.log(formValues)
+  if (!formValues) return <p>Loading</p>
+
+
 
   return (
-    
+
     <Form className='edit-post-form'
-    initialValues={formValues}
-    onFinish={onFinish}
-    onFinishFailed={onFinishFailed}
-    labelCol={{ span: 8 }}
-    // wrapperCol={{ span: 16 }}
+      initialValues={formValues}
+      onFinish={onFinish}
+      onFinishFailed={onFinishFailed}
+      labelCol={{ span: 8 }}
+
     >
 
-        <Form.Item
-        
-          name='author'
-          label="author"
-         
-          rules={[{ required: false, message: "Please input your Name!" }]}
-          >
-          <Input />
-        </Form.Item>
-    
-        <Form.Item 
+      <Form.Item
+
+        name='author'
+        label="author"
+
+        rules={[{ required: false, message: "Please input your Name!" }]}
+      >
+        <Input />
+      </Form.Item>
+
+      <Form.Item
         name='recipient'
         label="recipient"
-        >
-          <Input />
-        </Form.Item>
+      >
+        <Input />
+      </Form.Item>
 
-        <Form.Item
+      <Form.Item
         name='subject'
         label="subject"
-        >
-          
-          <Input.TextArea 
-          
+      >
+
+        <Input.TextArea
+
           rows={1}
           wrapperCol={{ span: 16, offset: 8 }}
-          />
+        />
 
 
-        </Form.Item>
+      </Form.Item>
 
 
 
-       
 
-<Form.Item
-  name={['message']}
-  label="message"
-  // labelCol={{ span: -16, offset: -16}}
-  // wrapperCol={{ span: 24, offset:-3}}
-  >
-  <Input.TextArea rows={5} />
-</Form.Item>
 
-       
-        <Form.Item 
-          name='date'
-          label="date">
-             <Input type="date" />
-             {/* <DatePicker defaultValue={dayjs('2015-01-01', 'YYYY-MM-DD')} /> */}
-        </Form.Item>
-          <Button 
-           name="submit-post-button"
-           type="primary" 
-           htmlType="submit" >
-            
-            Submit
-          </Button>
-       
+      <Form.Item
+        name={['message']}
+        label="message"
 
-      </Form>
-      
-    );
-  };
+      >
+        <Input.TextArea rows={5} />
+      </Form.Item>
+
+
+      <Form.Item
+        name='date'
+        label="date">
+        <Input type="date" />
+
+      </Form.Item>
+      <Button
+        name="submit-post-button"
+        type="primary"
+        htmlType="submit" >
+
+        Submit
+      </Button>
+
+
+    </Form>
+
+  );
+};
 
 
 
