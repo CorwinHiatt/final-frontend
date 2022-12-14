@@ -1,6 +1,9 @@
 # This is my Final Project for BocaCode
 
-F.E.R.N. stack
+F.E.R.N. stack I used google cloud storage for video and picture rendering, canva to design my logo, RESTful API,
+used with my kids everyday so far after deploying. 
+
+# Find @ https://www.brmessaging.app
 
 ## Available Scripts
 
